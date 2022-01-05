@@ -59,7 +59,7 @@ with Session() as s:
                 selectedHref = item.href
                 successCategory = True
         if successCategory == False:
-            print("Hatalı kategori: " + selectedCategory)
+            print("Incorrect category name: " + selectedCategory)
 
     #Entering the category page which selected by the user and getting all image sources
     siteCategory = s.get(link + selectedHref)
