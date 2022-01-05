@@ -16,6 +16,10 @@ categories = []
 imageSources = []
 successCategory = False
 
+#Creating outputs folder
+if not os.path.exists("outputs"):
+        os.mkdir("outputs")
+
 #Function of saving image to specific path and file
 def saveImage(imageCount, imageSources, selectedCategory, s):
     if not os.path.exists("outputs/" + selectedCategory):
